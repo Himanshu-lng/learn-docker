@@ -1,0 +1,23 @@
+commands to setup ubuntu container with java 8 and tomcat
+
+1. update system packages
+   apt-get update
+
+2. install open jdk 8
+  apt-get install openjdk-8-jdk
+
+3. install wget utility  
+    apt-get install wget 
+4. download tomcat and save to temp directory
+
+  wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.72/bin/apache-tomcat-9.0.72.tar.gz -O /tmp/tomcat.tar.gz
+
+5. change directory 
+   cd /tmp/
+
+6. extracting tomcat from tar file 
+   tar -zxvf tomcat.tar.gz
+7. cd apache-tomcat-9.0.72/bin/
+
+8. starting tomcat server from bin directory
+    sh startup.sh
